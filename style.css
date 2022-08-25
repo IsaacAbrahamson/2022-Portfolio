@@ -12,10 +12,11 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 4.8rem;
   font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .subtitle {
-  color: #A0A0A0;
+  color: rgba(0, 0, 0, 0.5);
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 3rem;
@@ -27,6 +28,7 @@ a {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 p {
@@ -35,7 +37,6 @@ p {
 
 .links {
   margin-top: 3rem;
-  margin-bottom: 6rem;
   display: flex;
   align-items: center;
 }
@@ -46,21 +47,21 @@ p {
 }
 
 .links a:not(:last-of-type) {
-  margin-right: 2rem;
+  margin-right: 1.6rem;
 }
 
 .links i {
   font-size: 3.5rem;
   transition: all 500ms;
-  color: #C7C7C7;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .links a:hover i {
-  color: #8661C1;
+  color: rgba(0, 0, 0, 0.9);
 }
 
 .btn-link {
-  background: black;
+  background: rgba(0, 0, 0, 0.4);
   color: white;
   padding: 1rem 2rem;
   font-weight: 600;
@@ -68,8 +69,8 @@ p {
 }
 
 .btn-link:hover {
-  background: #C2E812;
-  color: black;
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
   padding: 1rem 2rem;
 }
 
@@ -78,4 +79,80 @@ hr {
   height: 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 6rem 0;
+}
+
+h2.section-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 3rem;
+}
+
+.width-1 {
+  grid-column: span 1;
+}
+
+.width-2 {
+  grid-column: span 2;
+}
+
+.width-3 {
+  grid-column: span 3;
+}
+
+.width-4 {
+  grid-column: span 4;
+}
+
+.width-5 {
+  grid-column: span 5;
+}
+
+.width-6 {
+  grid-column: span 6;
+}
+
+.width-7 {
+  grid-column: span 7;
+}
+
+.width-8 {
+  grid-column: span 8;
+}
+
+.width-9 {
+  grid-column: span 9;
+}
+
+.width-10 {
+  grid-column: span 10;
+}
+
+.width-11 {
+  grid-column: span 11;
+}
+
+.width-12 {
+  grid-column: span 12;
+}
+
+.box {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 80vh;
+  max-height: 50rem;
+}
+
+#contact .links {
+  margin-top: 0;
+  margin-bottom: 6rem;
 }
