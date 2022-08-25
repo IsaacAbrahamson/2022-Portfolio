@@ -15,6 +15,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
   <!-- Styles -->
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
@@ -23,9 +26,12 @@
 <body>
   <main role="main">
     <section id="intro">
-      <h1 class="title">Isaac Abrahamson</h1>
-      <div class="subtitle" role="doc-subtitle">Front-End Web Developer</div>
-      <p class="intro-text">
+      <h1 class="title wow animate__animated animate__fadeInUp" data-wow-duration="800ms">Isaac Abrahamson</h1>
+      <div class="subtitle wow  animate__animated animate__fadeInUp" data-wow-delay="400ms" data-wow-duration="800ms"
+        role="doc-subtitle">
+        Front-End
+        Web Developer</div>
+      <p class="intro-text wow  animate__animated animate__fadeIn" data-wow-delay="1000ms" data-wow-duration="1600ms">
         I've been programming for the last eight years both as a hobby and professionally. In May 2022, I graduated with
         my B.S. in Business and Information Technology. I focus primarily on front-end development and have a strong
         understanding of HTML, CSS, JavaScript, and web design principles. I have a basic understanding of the back-end
@@ -33,7 +39,7 @@
         API's with Node.js and using MySQL and MongoDB databases. If you would like to get in touch, you can reach out
         to my contact info linked below.
       </p>
-      <div class="links">
+      <div class="links wow  animate__animated animate__fadeIn" data-wow-delay="1200ms" data-wow-duration="1600ms">
         <a class="btn-link" href="https://drive.google.com/file/d/1SxpHaljZov1F97yITTIEgZb591Lbk1RR/"
           target="_blank">Download Resume</a>
         <a class="logo-link" href="https://github.com/IsaacAbrahamson" target="_blank"><i
@@ -43,9 +49,10 @@
       </div>
     </section>
 
-    <hr>
+    <hr class="wow animate__animated animate__fadeIn" data-wow-delay="1800ms">
 
-    <section id="portfolio">
+    <section id="portfolio" class="wow animate__animated animate__fadeIn" data-wow-delay="1800ms"
+      data-wow-duration="2500ms">
       <h2 class="section-heading">Portfolio</h2>
       <div class="grid">
         <div class="box width-8"></div>
@@ -71,6 +78,11 @@
       </div>
     </section>
   </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
 </body>
 
 </html>
