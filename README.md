@@ -2,6 +2,12 @@
 
 [www.iabrahamson.com](https://iabrahamson.com)
 
+## Features
+- Sections fade in on load
+- Animated portfolio boxes
+- CSS variables and JavaScript to get exact animation height for each portfolio box
+- Default animation heights if JavaScript is disabled
+
 ## Design
 
 Built using Figma.
