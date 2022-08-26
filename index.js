@@ -1,5 +1,5 @@
 // Initialize Wow.js
-new WOW().init()
+new WOW({ mobile: false }).init()
 
 // Find heights of each box
 const innerBoxes = document.querySelectorAll('.innerBox')
