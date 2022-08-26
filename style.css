@@ -45,12 +45,6 @@ body {
   font-size: 1.6rem;
 }
 
-/* Box heights in case JavaScript is disabled */
-:root {
-  --titleHeight: 3rem;
-  --descHeight: 10rem;
-}
-
 
 
 
@@ -94,6 +88,10 @@ a {
 
 p {
   line-height: 1.5;
+}
+
+.intro-text {
+  max-width: 90rem;
 }
 
 .links {
@@ -236,7 +234,7 @@ h2.section-heading {
   position: relative;
   height: 100%;
   transition: 400ms ease;
-  transform: translateY(calc(100% - var(--titleHeight)));
+  transform: translateY(calc(100% - var(--titleHeight) - var(--descHeight)));
 }
 
 .innerBox .boxTitle {
@@ -246,7 +244,7 @@ h2.section-heading {
 
 .innerBox .boxDesc {
   transition: 400ms ease;
-  opacity: 0;
+  opacity: 1;
   color: white;
 }
 
@@ -286,20 +284,55 @@ h2.section-heading {
   width: 100%;
   background: #191919;
   transition: opacity 400ms ease;
-  opacity: 1;
-}
-
-/* Hover styles */
-
-.outerBox:hover .innerBox {
-  transform: translateY(calc(100% - var(--titleHeight) - var(--descHeight)));
-}
-
-.outerBox:hover .boxDesc {
-  opacity: 1;
-}
-
-.outerBox:hover .overlayBox .fill {
-  transition: opacity 800ms ease;
   opacity: 0;
+}
+
+/* Hover only on desktop */
+
+@media (hover: hover) and (pointer: fine) {
+  .innerBox {
+    transform: translateY(calc(100% - var(--titleHeight)));
+  }
+
+  .innerBox .boxDesc {
+    opacity: 0;
+  }
+
+  .overlayBox .fill {
+    opacity: 1;
+  }
+
+  .outerBox:hover .innerBox {
+    transform: translateY(calc(100% - var(--titleHeight) - var(--descHeight)));
+  }
+
+  .outerBox:hover .boxDesc {
+    opacity: 1;
+  }
+
+  .outerBox:hover .overlayBox .fill {
+    transition: opacity 800ms ease;
+    opacity: 0;
+  }
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1400px) {
+  main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .grid {
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 1.5rem;
+  }
+
+  .grid-item {
+    grid-column: span 6;
+  }
 }
