@@ -57,10 +57,12 @@ main {
 }
 
 #intro {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
 }
 
 h1 {
@@ -334,5 +336,51 @@ h2.section-heading {
 
   .grid-item {
     grid-column: span 6;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid-item {
+    grid-column: span 12;
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  .subtitle {
+    font-size: 2rem;
+  }
+
+  /* No animations */
+  .wow {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  .subtitle {
+    font-size: 1.8rem;
   }
 }
