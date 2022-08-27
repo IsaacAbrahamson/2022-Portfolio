@@ -306,7 +306,7 @@ h2.section-heading {
 /* On desktop, use javascript to set exact heights and animate cover */
 
 @media (hover: hover) and (pointer: fine) {
-  .innerBox {
+  body.js .innerBox {
     display: block;
     position: relative;
     height: 100%;
@@ -314,23 +314,23 @@ h2.section-heading {
     transform: translateY(calc(100% - var(--titleHeight)));
   }
 
-  .innerBox .boxDesc {
+  body.js .innerBox .boxDesc {
     opacity: 0;
   }
 
-  .overlayBox .fill {
+  body.js .overlayBox .fill {
     opacity: 1;
   }
 
-  .outerBox:hover .innerBox {
+  body.js .outerBox:hover .innerBox {
     transform: translateY(calc(100% - var(--titleHeight) - var(--descHeight)));
   }
 
-  .outerBox:hover .boxDesc {
+  body.js .outerBox:hover .boxDesc {
     opacity: 1;
   }
 
-  .outerBox:hover .overlayBox .fill {
+  body.js .outerBox:hover .overlayBox .fill {
     transition: opacity 800ms ease;
     opacity: 0;
   }

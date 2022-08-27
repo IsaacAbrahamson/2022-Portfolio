@@ -1,6 +1,9 @@
 // Initialize Wow.js
 new WOW({ mobile: false }).init()
 
+// Set class on body for CSS to know JS is enabled
+document.querySelector('body').classList.add('js')
+
 // Calculate the heights for boxes
 const innerBoxes = document.querySelectorAll('.innerBox')
 calcHeights(innerBoxes)
