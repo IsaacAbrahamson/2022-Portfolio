@@ -102,3 +102,15 @@ body.js .outerBox:hover .innerBox {
 }
 ```
 This approach proved to be the simplest way to give each user the best user experience possible.
+
+## A Trip Down Memory Lane
+
+You may have noticed that the name of this repository is "2022-Portfolio" not "Portfolio" or "Portfolio Website". There's a reason for that!
+
+I've been building websites since I was fifteen years old, and I built my first portfolio website more than six years ago in 2016.
+
+Somehow I had enough discernment during my teenage years to save those early versions of my work. I've collected them here to share them with you, so if you are just getting started with web development you can see how my skills have progressed over time.
+
+- [2016 Portfolio](https://github.com/IsaacAbrahamson/2016-Portfolio)
+- [2017 Portfolio](https://github.com/IsaacAbrahamson/2017-Portfolio)
+- [2019 Portfolio](https://github.com/IsaacAbrahamson/2019-Portfolio)
