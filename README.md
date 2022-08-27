@@ -6,8 +6,7 @@
 - Sections fade in on load
 - Animated portfolio boxes
 - CSS variables and JavaScript to get exact animation height for each portfolio box
-- Unhide portfolio boxes on touch devices
-- Noscript meme
+- Unhide portfolio sections on touch and JavaScript disabled devices
 
 ## Design
 
