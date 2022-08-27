@@ -318,6 +318,17 @@ h2.section-heading {
   }
 }
 
+.iconBox {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+}
+
+.iconBox i {
+  color: #ccc;
+  font-size: 3.6rem;
+  margin-left: 1.2rem;
+}
 
 
 /* MEDIA QUERIES */
