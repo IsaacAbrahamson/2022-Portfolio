@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Abrahamson: Front-End Web Developer</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="page.css">
+</head>
+
+<body class="page">
+  <main role="main">
+    <section class="page-section">
+      <a href="/" class="goback">🡠 Go Back</a>
+      <h1 class="page-title">3's Cinema</h1>
+      <p class="page-text">3's Cinema is a fictional movie theater ecommerce website. Users can browse currently playing
+        movies, select tickets, update their cart, and checkout.</p>
+      <div class="img-container">
+        <img src="../media/cinema.png" alt="Picture of 3's cinema app">
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Links</h2>
+        <ul class="page-list">
+          <li><a href="https://cinema.iabrahamson.com" target="_blank">Live Demo</a></li>
+          <li><a href="https://github.com/IsaacAbrahamson/Cinema-App" target="_blank">GitHub Repository</a></li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Features</h2>
+        <ul class="page-list">
+          <li>Latest movie data saved from <a href="https://developers.themoviedb.org/3/getting-started/introduction"
+              target="_blank">The Movie
+              Database API</a> every morning using crontab</li>
+          <li>MySQL and Express.js REST API to send cached movie data and checkout orders</li>
+          <li>Interactive React and TypeScript web application</li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Planned Features</h2>
+        <ul class="page-list">
+          <li>Print or download tickets after checkout</li>
+          <li>User functionality to login and view order history</li>
+          <li>Fix timezone related issues</li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">The Idea</h2>
+        <p class="page-text">After buying some tickets online from a local theater, I was struck with how boring and
+          unintuitive the user experience was. I wanted to see if I could create a more interactive and exciting user
+          experience using React. The first challenge I encountered was how to get the latest movie data. After
+          carefully researching several options, I decided to create an Express.js server and MySQL database that stores
+          data from <a href="https://developers.themoviedb.org/3/getting-started/introduction" target="_blank">The Movie
+            Database API</a>. After building the database and server, I created a crontab script that would update the
+          database with the
+          latest movies every morning.</p>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">How It Works</h2>
+        <p class="page-text">When the user first visits the site, the are presented with a full-screen carousel slider
+          that shows the latest movies every few seconds.</p>
+        <div class="img-container">
+          <img src="../media/cinema/header.png" alt="Picture of cinema header">
+        </div>
+        <p class="page-text">Below the header is a list of all of the available movie showings.</p>
+        <div class="img-container">
+          <img src="../media/cinema/showings.png" alt="Picture of cinema showings">
+        </div>
+        <p class="page-text">On the top is a date selector to change the currently selected day. By default, movies are
+          shown for the current day, but movie showings can also be viewed for the next five days. At the bottom of each
+          movie section is a list of the available show times.</p>
+        <div class="img-container">
+          <img src="../media/cinema/showtimes.png" alt="Picture of cinema show times">
+        </div>
+        <p class="page-text">Selecting a showing will take the user to the movie detail page which includes an embedded
+          YouTube trailer.</p>
+        <div class="img-container">
+          <img src="../media/cinema/detail.png" alt="Picture of cinema detail page">
+        </div>
+        <p class="page-text">Below the trailer and description is a grid of all the available tickets.</p>
+        <div class="img-container">
+          <img src="../media/cinema/tickets.png" alt="Picture of cinema tickets">
+        </div>
+        <p class="page-text">Clicking on a ticket will mark it as selected. Clicking the ticket again will unmark it as
+          selected. The user will then have an option to add
+          those tickets to their cart.</p>
+        <div class="img-container">
+          <img src="../media/cinema/selected.png" alt="Picture of selected cinema tickets">
+        </div>
+        <p class="page-text">Once the user has added their tickets to the cart, they will turn green and will no longer
+          be clickable. Additionally, the cart icon in the top-right corner of the navbar will show the number of items
+          currently in the cart.</p>
+        <div class="img-container">
+          <img src="../media/cinema/added.png" alt="Picture of added cinema tickets">
+        </div>
+        <p class="page-text">Inside the cart page, the user will see a list of all of their tickets with an option to
+          remove each one.</p>
+        <div class="img-container">
+          <img src="../media/cinema/items.png" alt="Picture of ticket items in cart">
+        </div>
+        <p class="page-text">Below all of the selected tickets is an order summary that shows the total calculated price
+          of all tickets with tax. The user can enter payment details (disabled in demo) and checkout.</p>
+        <div class="img-container">
+          <img src="../media/cinema/confirm.png" alt="Picture of ticket summary in cart">
+        </div>
+        <p class="page-text">After checking out, an order with those tickets is created in the database, and those
+          tickets are marked as no longer available. If any user visits that movies showtime, that selected seat will be
+          blacked out.</p>
+        <div class="img-container">
+          <img src="../media/cinema/purchased.png" alt="Picture of purchased tickets">
+        </div>
+      </div>
+
+      <a href="/" class="goback bottom">🡠 Back to Home</a>
+
+      <hr>
+
+      <section id="contact">
+        <h2 class="section-heading">Get in touch</h2>
+        <div class="links">
+          <a class="logo-link" href="https://drive.google.com/file/d/1QcgLzrhwCjcvsj9kSBu_jHypRocBg68z"
+            target="_blank"><i class="mdi mdi-file"></i></a>
+          <a class="logo-link" href="https://github.com/IsaacAbrahamson" target="_blank"><i
+              class="devicon-github-original"></i></a>
+          <a class="logo-link" href="https://www.linkedin.com/in/isaacabrahamson/" target="_blank"><i
+              class="devicon-linkedin-plain"></i></a>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="page.js"></script>
+</body>
