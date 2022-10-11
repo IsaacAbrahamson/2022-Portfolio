@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isaac Abrahamson: Front-End Web Developer</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Animations -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="page.css">
+</head>
+
+<body class="page">
+  <main role="main">
+    <section class="page-section">
+      <a href="/" class="goback">🡠 Go Back</a>
+      <h1 class="page-title">Worship Manager</h1>
+      <p class="page-text">Worship Manager is a dashboard application for worship leaders to track and manage all of the
+        events, people, and songs that happen in a worship service. Please note, this dashboard is currently not
+        intended to be used by mobile devices</p>
+      <div class="img-container">
+        <img src="../media/wm.jpg" alt="Picture of worship manager app">
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Links</h2>
+        <ul class="page-list">
+          <li><a href="https://wm.iabrahamson.com" target="_blank">Live Demo</a></li>
+          <li><a href="https://github.com/IsaacAbrahamson/Worship-Manager" target="_blank">GitHub Repository</a></li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Features</h2>
+        <ul class="page-list">
+          <li>Interactive CRUD application using React hooks and Context API.</li>
+          <li>Client-side routing and redirection using React Router v6.</li>
+          <li>RESTful API using the Express.js framework and MongoDB.</li>
+          <li>Session-based user authentication and protected routes using Passport.js</li>
+          <li>Securely hashed and stored passwords using Bcrypt.</li>
+          <li>Strongly typed code using TypeScript on both client and server.</li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">Planned Features</h2>
+        <ul class="page-list">
+          <li>Input masking and validation</li>
+          <li>Dynamic filtering and drag-and-drop tables using React Table</li>
+          <li>Import/Export functionality</li>
+          <li>Mobile friendly</li>
+        </ul>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">The Idea</h2>
+        <p class="page-text">The idea for this project is based on a project that I initially built for a
+          Database Systems
+          class in college. In that class, I designed a MySQL database to solve the need of storing worship service
+          information. The MySQL database was complete with an ERD, functions, and stored procedures. However, since the
+          project was for a database class, the user
+          interface that I built was mostly an after-thought as shown below:</p>
+        <div class="img-container">
+          <img src="../media/bandmanager.png" alt="Picture of original band manager app">
+        </div>
+        <p class="page-text">I was going to remake the user
+          interface, but I realized that I could take the
+          same
+          concept and make a much more polished and fully-featured web app if I started from scratch using new tools
+          that I had learned. Worship Manager is
+          the evolution of this idea: a fully-featured SPA using React and TypeScript, and an Express.js REST API for
+          the server.</p>
+      </div>
+
+      <div class="page-group">
+        <h2 class="page-heading">How It Works</h2>
+        <p class="page-text">When first visiting the site, the user is redirected to the login and register page. The
+          user can create an account with an email, password, and name. </p>
+        <div class="img-container">
+          <img src="../media/worship/login.jpg" alt="Picture of worship manager app login">
+        </div>
+        <p class="page-text">After logging in, the user will be redirected to the services page where they can see all
+          of their past and upcoming services. The user will automatically be given three upcoming and past services
+          with example data.</p>
+        <div class="img-container">
+          <img src="../media/wm.jpg" alt="Picture of worship manager app services page">
+        </div>
+        <p class="page-text">The user can click the "New Service" button on the top right to create a new service, or
+          click any service to go to its detail page shown below. This detail page contains a list of all of the events
+          and people who participated in the service.</p>
+        <div class="img-container">
+          <img src="../media/worship/detail.jpg" alt="Picture of worship manager service detail page">
+        </div>
+        <p class="page-text">The user can also add an event or person to the service using the drop downs under each
+          table. The cool thing about these dropdowns is that they pull in all of the data from the other parts of the
+          application. For example, when the user selects a new person to add, all of the names in the dropdown are
+          pulled from the "People" page.</p>
+        <div class="img-container">
+          <img src="../media/worship/dropdown.jpg" alt="Picture of worship manager service detail page dropdown.">
+        </div>
+        <p class="page-text">The user can view and edit all of the available songs and people using the Songs and People
+          pages on the left sidebar.</p>
+        <div class="img-container">
+          <img src="../media/worship/people.jpg" alt="Picture of worship manager people page.">
+        </div>
+        <p class="page-text">The user can also edit all of the available service types, event types, and roles using the
+          Options page.</p>
+        <div class="img-container">
+          <img src="../media/worship/options.jpg" alt="Picture of worship manager options page.">
+        </div>
+        <p class="page-text">Existing services, people, and options can also be edited using a pop-up modal:</p>
+        <div class="img-container">
+          <img src="../media/worship/modal.jpg" alt="Picture of worship manager modal.">
+        </div>
+        <p class="page-text">Together, all of these features create a flexible dashboard application that can easily
+          track
+          and manage worship services.</p>
+      </div>
+
+      <a href="/" class="goback bottom">🡠 Go Back</a>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="page.js"></script>
+</body>

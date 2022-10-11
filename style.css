@@ -65,7 +65,7 @@ main {
   padding-bottom: 6rem;
 }
 
-h1 {
+h1.title {
   font-family: 'Montserrat', sans-serif;
   font-size: 6rem;
   font-weight: 700;
@@ -361,7 +361,7 @@ h2.section-heading {
     grid-column: span 12;
   }
 
-  h1 {
+  h1.title {
     font-size: 5rem;
   }
 
@@ -393,7 +393,7 @@ h2.section-heading {
 }
 
 @media screen and (max-width: 400px) {
-  h1 {
+  h1.title {
     font-size: 4rem;
   }
 
